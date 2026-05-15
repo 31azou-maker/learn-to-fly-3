@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn to Fly 3</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      overflow: hidden;
+    }
+
+    #flash-container {
+      position: fixed;
+      inset: 0;
+      background: black;
+    }
+
+    embed, ruffle-player {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: black;
+      border: 0;
+    }
+  </style>
+
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+      publicPath: "https://unpkg.com/@ruffle-rs/ruffle@0.2.0-nightly.2026.3.6/",
+      autoplay: "on",
+      unmuteOverlay: "hidden"
+    };
+  </script>
+
+  <script src="https://unpkg.com/@ruffle-rs/ruffle@0.2.0-nightly.2026.3.6/ruffle.js"></script>
+</head>
+
+<body>
+  <div id="flash-container">
+    <embed
+      src="learn-to-fly-3.swf"
+      type="application/x-shockwave-flash"
+      width="100%"
+      height="100%"
+      allowfullscreen="true">
+  </div>
+</body>
+</html>
